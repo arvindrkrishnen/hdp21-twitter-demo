@@ -62,7 +62,7 @@
 		<dependency>
 		    <groupId>xerces</groupId>
 		    <artifactId>xercesImpl</artifactId>
-		    <version>2.9.1</version>
+		    <version>2.12.2</version>
 		</dependency>
 		<dependency>
 		    <groupId>xalan</groupId>
@@ -273,11 +273,9 @@
 			            <configuration>
 			     
 			                <transformers>
-			                    <transformer
-			                            implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-			                    <transformer
-			                            implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-			                        <mainClass></mainClass>
+			                    <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+			                    <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+			                        <mainClass/>
 			                    </transformer>
 			                </transformers>
 
